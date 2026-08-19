@@ -1,65 +1,39 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Creative Cardboard</title>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creative Cardboard | CCP</title>
 <style>
-:root{--dark:#18242b;--teal:#2f6f73;--gold:#e8a83e;--paper:#f7f4ed}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--paper);color:var(--dark);line-height:1.55}
-nav{position:sticky;top:0;z-index:5;background:#18242bf2;color:white}.nav{max-width:1100px;margin:auto;padding:12px 4%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800}.brand img{width:46px;height:46px;border-radius:10px;background:#fff;object-fit:cover}.links a{color:#fff;text-decoration:none;margin-left:18px}.links a:hover{color:#ffd477}
-.hero{background:linear-gradient(135deg,#18242b,#31545b);color:#fff;padding:80px 5%}.hero-in{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.4fr .6fr;gap:35px;align-items:center}.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:.9;margin:12px 0}.hero p{font-size:1.15rem;color:#dbe7e8}.logo-box{background:#fff;padding:18px;border-radius:24px}.logo-box img{width:100%;display:block;border-radius:16px}
-section{padding:65px 5%}.wrap{max-width:1100px;margin:auto}h2{font-size:2.3rem;margin-top:0}.sub{color:#66777e}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.box,.person{background:#fff;border:1px solid #dce3e4;border-radius:18px;padding:24px;box-shadow:0 8px 24px #18242b0d}.icon{font-size:2.2rem}.price{font-size:1.45rem;font-weight:900;color:var(--teal)}.tag{display:inline-block;background:#edf5f4;color:var(--teal);padding:4px 9px;border-radius:20px;font-size:.8rem;font-weight:700}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{background:#18242b;color:#fff;border-radius:18px;padding:22px}.stat b{font-size:2rem;color:#ffd477;display:block}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.offer{background:linear-gradient(135deg,#f0dfb9,#fffaf0)}.team{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.role{color:var(--teal);font-weight:700;font-size:.9rem}.timeline{border-left:3px solid var(--gold);padding-left:20px}.event{margin-bottom:20px}
-footer{background:#18242b;color:#dbe7e8;padding:35px 5%}.footer{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){.hero-in,.two{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.team{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.links{display:none}}
-@media(max-width:520px){.grid,.team,.stats{grid-template-columns:1fr}.hero{padding:55px 5%}}
-</style>
-</head>
-<body>
-<nav><div class="nav">
-<a class="brand" href="#home"><img src="cc_logo.png" alt="Creative Cardboard logo"><span>Creative Cardboard</span></a>
-<div class="links"><a href="#products">Products</a><a href="#stats">Stats</a><a href="#team">Team</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div>
-</div></nav>
+:root{--dark:#16242b;--teal:#2f7074;--gold:#e5a63a;--paper:#f7f3ea;--ink:#1d292e;--muted:#68767b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+nav{position:sticky;top:0;z-index:10;background:#16242bf5;color:#fff}.nav{max-width:1120px;margin:auto;padding:10px 5%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800}.brand img{width:44px;height:44px;border-radius:9px;background:#fff;object-fit:cover}.links a{color:#fff;text-decoration:none;margin-left:18px}.links a:hover{color:#ffd879}
+.hero{background:linear-gradient(135deg,#16242b,#355b61);color:#fff;padding:72px 5%}.hero-in{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}.hero h1{font-size:clamp(3.2rem,9vw,6rem);line-height:.86;margin:12px 0}.hero p{font-size:1.15rem;color:#dce8e9}.hero small{letter-spacing:2px}.logo-box{background:#fff;padding:16px;border-radius:24px}.logo-box img{width:100%;display:block;border-radius:15px}
+section{padding:62px 5%}.wrap{max-width:1120px;margin:auto}h2{font-size:2.3rem;margin:0 0 8px}.sub{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.box,.person{background:#fff;border:1px solid #dce2e3;border-radius:20px;padding:23px;box-shadow:0 7px 22px #16242b0d}.icon{font-size:2.3rem}.card h3{margin-bottom:4px}.price{font-size:1.45rem;font-weight:900;color:var(--teal)}.tag{display:inline-block;background:#eaf4f3;color:var(--teal);padding:4px 9px;border-radius:20px;font-size:.78rem;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{background:#16242b;color:#fff;border-radius:18px;padding:20px}.stat b{display:block;font-size:1.9rem;color:#ffd879}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.offer{background:linear-gradient(135deg,#f0dfb9,#fffaf0)}.team{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.role{color:var(--teal);font-weight:700;font-size:.9rem}.craft{background:#eef6f5;border-left:5px solid var(--teal);padding:15px 18px;border-radius:10px}
+footer{background:#16242b;color:#dce8e9;padding:32px 5%}.footer{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.hero-in,.two{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.team{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.links{display:none}}@media(max-width:520px){.grid,.team,.stats{grid-template-columns:1fr}.hero{padding:52px 5%}}
+</style></head><body>
+<nav><div class="nav"><a class="brand" href="#home"><img src="cc_logo.png" alt="Creative Cardboard logo"><span>Creative Cardboard</span></a>
+<div class="links"><a href="#products">Products</a><a href="#offers">Offers</a><a href="#team">Team</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
+<header class="hero" id="home"><div class="hero-in"><div><small>CREATIVE CARDBOARD • CCP</small><h1>Make.<br>Create.<br>Collect.</h1><p>Handmade stationery, football collectibles and fun paper crafts made by our team.</p></div><div class="logo-box"><img src="cc_logo.png" alt="Creative Cardboard"></div></div></header>
 
-<header class="hero" id="home"><div class="hero-in">
-<div><small>FOUNDED 16 JULY 2026</small><h1>Creative<br>Cardboard</h1><p>Handmade stationery, collectible cards and creative crafts — made by our team and customizable for you.</p></div>
-<div class="logo-box"><img src="cc_logo.png" alt="Creative Cardboard"></div>
-</div></header>
-
-<section id="products"><div class="wrap"><h2>🛍️ Products</h2><p class="sub">All prices are in INR.</p>
-<div class="grid">
-<div class="card"><div class="icon">📒</div><h3>Mini Notebook</h3><div class="price">₹10</div><p>14-page handmade notebook. Eco-friendly and modern styles.</p><span class="tag">Customizable</span></div>
-<div class="card"><div class="icon">📇</div><h3>Binder</h3><div class="price">₹15</div><p>14-card handmade binder for organizing collections.</p><span class="tag">Customizable</span></div>
-<div class="card"><div class="icon">🔖</div><h3>Bookmarks</h3><div class="price">₹2</div><p>Different handmade designs, including custom options.</p><span class="tag">Handmade</span></div>
+<section id="products"><div class="wrap"><h2>🛍️ CCP Store</h2><p class="sub">All prices are in INR. Paper-craft items are handmade and non-functional.</p><div class="grid">
 <div class="card"><div class="icon">🖊️</div><h3>Customized Pen</h3><div class="price">₹10</div><p>Personalized pens for school and everyday use.</p><span class="tag">Customizable</span></div>
+<div class="card"><div class="icon">📒</div><h3>Mini Notebook</h3><div class="price">₹10</div><p>14-page handmade notebook in eco-friendly or modern style.</p><span class="tag">Customizable</span></div>
+<div class="card"><div class="icon">📇</div><h3>Binder</h3><div class="price">₹15</div><p>14-card handmade binder for collections.</p><span class="tag">Customizable</span></div>
+<div class="card"><div class="icon">🔖</div><h3>Bookmarks</h3><div class="price">₹2</div><p>Different handmade designs with custom options.</p><span class="tag">Handmade</span></div>
 <div class="card"><div class="icon">⚽</div><h3>Football Card Pack</h3><div class="price">₹30</div><p>Collectible football cards and themed sets.</p><span class="tag">Collectible</span></div>
-<div class="card"><div class="icon">🎨</div><h3>Custom Craft & Print</h3><div class="price">₹25+</div><p>Custom handmade projects and printing. Final price depends on the project.</p><span class="tag">Made to order</span></div>
+<div class="card"><div class="icon">🗡️</div><h3>Paper Dagger Craft</h3><div class="price">₹20</div><p>Decorative paper-only craft model. Non-functional.</p><span class="tag">Paper Craft</span></div>
+<div class="card"><div class="icon">🥷</div><h3>Paper Kunai Craft</h3><div class="price">₹25</div><p>Decorative paper-only craft model. Non-functional.</p><span class="tag">Paper Craft</span></div>
+<div class="card"><div class="icon">⚔️</div><h3>Paper Katana Craft</h3><div class="price">₹50</div><p>Decorative paper-only craft model. Non-functional.</p><span class="tag">Paper Craft</span></div>
+<div class="card"><div class="icon">📄</div><h3>Paper Knife Craft</h3><div class="price">₹20</div><p>Decorative paper-only craft model. Non-functional.</p><span class="tag">Paper Craft</span></div>
+<div class="card"><div class="icon">🎨</div><h3>Custom Craft & Print</h3><div class="price">₹25+</div><p>Custom handmade projects and printing.</p><span class="tag">Made to order</span></div>
 </div></div></section>
 
-<section id="stats"><div class="wrap"><h2>📊 CCP Snapshot</h2><div class="stats">
-<div class="stat"><b>16 Jul</b>Founded</div><div class="stat"><b>6+</b>Product types</div><div class="stat"><b>₹2+</b>Starting price</div><div class="stat"><b>100%</b>Creative</div>
-</div></div></section>
+<section id="offers"><div class="wrap two"><div class="box offer"><h2>🎁 Offers</h2><p><b>Buy 2 notebooks, get 1 free.</b></p><p><b>Buy 1 binder + 1 notebook and get ₹5 off.</b></p></div><div class="box"><h2>⭐ Featured</h2><p>Football cards and our handmade paper-craft collection are featured products.</p><div class="craft"><b>Paper craft note:</b> All craft models in this collection are paper-only, decorative and non-functional.</div></div></div></section>
 
-<section><div class="wrap two"><div class="box offer"><h2>🎁 Offers</h2><p><b>Buy 2 notebooks, get 1 free.</b></p><p><b>Buy 1 binder + 1 notebook and get ₹5 off.</b></p><p class="sub">Offers depend on availability.</p></div>
-<div class="box"><h2>✨ Why CCP?</h2><p>We make small-batch handmade products and enjoy turning simple paper and cardboard into useful and collectible things.</p></div></div></section>
+<section id="about"><div class="wrap two"><div><h2>📅 Our Story</h2><p>Creative Cardboard started on <b>16 July 2026</b> as a small pen and paper business and grew into a creative collection of handmade products.</p><p>We focus on making useful, fun and customizable products from simple materials.</p></div><div class="box"><h2>📊 CCP Snapshot</h2><div class="stats"><div class="stat"><b>16 Jul</b>Founded</div><div class="stat"><b>10+</b>Products</div><div class="stat"><b>₹2</b>Starting price</div><div class="stat"><b>100%</b>Creative</div></div></div></div></section>
 
-<section id="team"><div class="wrap"><h2>👥 Our Team</h2><div class="team">
-<div class="person"><b>Arinjay</b><div class="role">CEO · Head of Marketing</div></div>
-<div class="person"><b>Riyansh</b><div class="role">Co-Founder · Head of Advertisement</div></div>
-<div class="person"><b>Atharva</b><div class="role">CTO · Website Manager · Producer</div></div>
-<div class="person"><b>Ayansh</b><div class="role">Paper Craft / Product Division</div></div>
-</div></div></section>
+<section id="team"><div class="wrap"><h2>👥 Team</h2><div class="team"><div class="person"><b>Arinjay</b><div class="role">CEO · Head of Marketing</div></div><div class="person"><b>Riyansh</b><div class="role">Co-Founder · Head of Advertisement</div></div><div class="person"><b>Atharva</b><div class="role">CTO · Website Manager · Producer</div></div><div class="person"><b>Ayansh</b><div class="role">Paper Craft / Product Division</div></div></div></div></section>
 
-<section id="journey"><div class="wrap two"><div><h2>📅 Our Journey</h2><p class="sub">How Creative Cardboard grew from a small idea.</p></div><div class="timeline">
-<div class="event"><b>16 July 2026</b><br>Creative Cardboard was founded.</div>
-<div class="event"><b>Stationery</b><br>Pens, notebooks and binders became our first core products.</div>
-<div class="event"><b>Bookmarks</b><br>Handmade bookmarks joined the CCP product range.</div>
-<div class="event"><b>Collectibles</b><br>Football cards expanded the product range.</div>
-<div class="event"><b>Website</b><br>CCP launched its online home.</div>
-</div></div></section>
-
-<section id="contact"><div class="wrap"><div class="box"><h2>📞 Contact CCP</h2><p><b>For queries and orders:</b> Please use a parent/guardian-managed business contact number or messaging account.</p><p><b>Location:</b> Bengaluru, India</p></div></div></section>
-
-<footer><div class="footer"><div><b>Creative Cardboard</b><br><small>Think. Create. Inspire.</small></div><div>© 2026 Creative Cardboard · All prices in INR</div></div></footer>
+<section id="contact"><div class="wrap"><div class="box"><h2>📞 Contact CCP</h2><p><b>Queries & orders:</b> Use the business contact managed by a parent/guardian.</p><p><b>Location:</b> Bengaluru, India</p><p class="sub">Please don't post a young team member's personal phone number publicly.</p></div></div></section>
+<footer><div class="footer"><div><b>Creative Cardboard</b><br><small>Think. Create. Inspire.</small></div><div>© 2026 CCP · All prices in INR</div></div></footer>
 </body></html>
