@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Creative Cardboard — handmade, creative and customizable paper and cardboard products.">
+<title>Creative Cardboard</title>
+<link rel="icon" href="cc_logo.png">
+<style>
+:root{
+  --ink:#18242b; --muted:#62727b; --paper:#f7f4ed; --card:#ffffff;
+  --accent:#e8a83e; --accent2:#2f6f73; --line:#dfe5e6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(24,36,43,.96);backdrop-filter:blur(8px);color:white}
+.navin{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+.brand img{width:48px;height:48px;object-fit:cover;border-radius:10px;background:white}
+.links{display:flex;gap:22px;font-size:.95rem}
+.links a:hover{color:#ffd47d}
+.menu{display:none;background:none;border:0;color:white;font-size:28px}
+.hero{background:linear-gradient(135deg,#18242b 0%,#29434b 60%,#356d70 100%);color:white;padding:88px 0 78px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border:70px solid rgba(232,168,62,.12);border-radius:50%;right:-120px;top:-160px}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:50px}
+.kicker{color:#ffd47d;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:.82rem}
+h1{font-size:clamp(3rem,7vw,6.5rem);line-height:.92;margin:14px 0 22px;letter-spacing:-4px}
+.hero p{font-size:1.12rem;max-width:650px;color:#dce7e8}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:13px 18px;border-radius:12px;font-weight:800;border:1px solid transparent}
+.btn.primary{background:var(--accent);color:#18242b}
+.btn.secondary{border-color:#8ea7aa;color:white}
+.hero-logo{background:white;border-radius:28px;padding:22px;box-shadow:0 25px 60px rgba(0,0,0,.25)}
+.hero-logo img{width:100%;display:block;border-radius:18px}
+section{padding:72px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}
+h2{font-size:2.3rem;margin:0}
+.sub{color:var(--muted);max-width:650px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(24,36,43,.05)}
+.card h3{margin:10px 0 6px;font-size:1.25rem}
+.price{font-size:1.5rem;font-weight:900;color:var(--accent2)}
+.icon{font-size:2rem}
+.tag{display:inline-block;background:#eef5f4;color:#2f6f73;padding:5px 9px;border-radius:999px;font-size:.75rem;font-weight:800;margin-top:8px}
+.feature{background:#18242b;color:white;border-radius:22px;padding:30px}
+.feature p{color:#d4e0e2}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.person{background:white;border:1px solid var(--line);border-radius:16px;padding:20px}
+.person strong{display:block;font-size:1.1rem}
+.role{color:var(--accent2);font-weight:700;font-size:.9rem}
+.timeline{border-left:3px solid var(--accent);padding-left:22px}
+.event{margin:0 0 24px}
+.event strong{font-size:1.05rem}
+.order{background:linear-gradient(135deg,#f0e1bf,#fffaf0);border-radius:24px;padding:34px}
+form{display:grid;gap:14px}
+label{font-weight:700}
+input,select,textarea{width:100%;padding:13px;border:1px solid #cfd8da;border-radius:10px;background:white;font:inherit}
+textarea{min-height:110px;resize:vertical}
+footer{background:#18242b;color:#d7e2e4;padding:38px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.small{font-size:.88rem;color:#9fb0b4}
+@media(max-width:850px){
+  .links{display:none}.menu{display:block}.hero-grid,.two{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}.team{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  section{padding:52px 0}.grid,.team{grid-template-columns:1fr}h1{letter-spacing:-2px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container navin">
+    <a class="brand" href="#home"><img src="cc_logo.png" alt="Creative Cardboard logo"><span>Creative Cardboard</span></a>
+    <div class="links">
+      <a href="#products">Products</a><a href="#team">Team</a><a href="#journey">Journey</a><a href="#order">Order</a>
+    </div>
+    <button class="menu" onclick="alert('Use the links on the page to explore Creative Cardboard.')">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Founded 16 July 2026</div>
+      <h1>Make it.<br>Make it yours.</h1>
+      <p>Creative Cardboard makes affordable handmade stationery, collectible cards and creative paper crafts. Custom ideas welcome.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#products">Explore products</a>
+        <a class="btn secondary" href="#order">Place an order</a>
+      </div>
+    </div>
+    <div class="hero-logo"><img src="cc_logo.png" alt="Creative Cardboard"></div>
+  </div>
+</header>
+
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <div><h2>Our Products</h2><p class="sub">Current prices can change as new collections launch. Customization is available on selected products.</p></div>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">📒</div><h3>Mini Notebook</h3><div class="price">₹10</div><p>14-page handmade notebook. Available in eco-friendly and modern styles.</p><span class="tag">Customizable</span></article>
+      <article class="card"><div class="icon">📇</div><h3>Binder</h3><div class="price">₹15</div><p>14-card handmade binder for organizing your collection.</p><span class="tag">Customizable</span></article>
+      <article class="card"><div class="icon">🔖</div><h3>Bookmarks</h3><div class="price">₹2</div><p>Different handmade designs, including personalized bookmarks.</p><span class="tag">New product</span></article>
+      <article class="card"><div class="icon">🖊️</div><h3>Customized Pens</h3><div class="price">₹10</div><p>Personalized pens made for everyday school use.</p><span class="tag">Customizable</span></article>
+      <article class="card"><div class="icon">⚽</div><h3>Football Card Packs</h3><div class="price">₹35</div><p>Collectible football cards and themed sets. Availability depends on the current collection.</p><span class="tag">Collectible</span></article>
+      <article class="card"><div class="icon">🎨</div><h3>Custom Craft & Print</h3><div class="price">₹25+</div><p>Printing and handmade custom projects. Final price depends on the project.</p><span class="tag">Made to order</span></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container two">
+    <div class="feature">
+      <div class="kicker">This week's idea</div>
+      <h2>Handmade. Small-batch. Creative.</h2>
+      <p>We make products ourselves instead of mass-producing them. That means designs can be changed, personalized and improved based on customer ideas.</p>
+    </div>
+    <div class="card">
+      <h3>Offers</h3>
+      <p><strong>Buy 2 notebooks, get 1 free</strong></p>
+      <p><strong>Buy 1 binder + 1 notebook and get ₹5 off</strong></p>
+      <p class="small">Offers are subject to availability and may be changed by Creative Cardboard.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="container">
+    <div class="section-head"><div><h2>Meet the Team</h2><p class="sub">The people currently working on Creative Cardboard.</p></div></div>
+    <div class="team">
+      <div class="person"><strong>Arinjay</strong><span class="role">CEO · Head of Marketing</span><p>Leads the company and marketing.</p></div>
+      <div class="person"><strong>Riyansh</strong><span class="role">Co-Founder · Head of Advertisement</span><p>Handles advertising and promotion.</p></div>
+      <div class="person"><strong>Atharva</strong><span class="role">CTO · Website Manager · Producer</span><p>Builds and manages the technology side of CCP.</p></div>
+      <div class="person"><strong>Ayansh</strong><span class="role">Paper Craft / Product Division</span><p>Creates handmade paper craft products.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="container two">
+    <div>
+      <h2>Our Journey</h2>
+      <p class="sub">A few milestones from the company story.</p>
+    </div>
+    <div class="timeline">
+      <div class="event"><strong>16 July 2026 — Creative Cardboard founded</strong><br>Started as a small handmade pen and paper business.</div>
+      <div class="event"><strong>First bookmark sale</strong><br>Bookmarks became an official CCP product.</div>
+      <div class="event"><strong>Website launched</strong><br>The team began building an official online home for CCP.</div>
+      <div class="event"><strong>More collections</strong><br>Expanded into cards, custom crafts and new handmade products.</div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="container">
+    <div class="order">
+      <h2>Place an Order</h2>
+      <p class="sub">Fill this in and save the order details. This demo form does not take payment or send data to a server.</p>
+      <form onsubmit="submitOrder(event)">
+        <label>Name<input id="name" required placeholder="Your name"></label>
+        <label>Product
+          <select id="product" required>
+            <option value="">Choose a product</option>
+            <option>Mini Notebook — ₹10</option>
+            <option>Binder — ₹15</option>
+            <option>Bookmark — ₹2</option>
+            <option>Customized Pen — ₹10</option>
+            <option>Football Card Pack — ₹35</option>
+            <option>Custom Craft / Print — ₹25+</option>
+          </select>
+        </label>
+        <label>Quantity<input id="qty" type="number" min="1" value="1" required></label>
+        <label>Customization / notes<textarea id="notes" placeholder="Name, colour, design, etc."></textarea></label>
+        <button class="btn primary" type="submit">Create Order Summary</button>
+      </form>
+      <p id="result" style="font-weight:700;margin-bottom:0"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>Creative Cardboard</strong><div class="small">Think. Create. Inspire.</div></div>
+    <div class="small">Founded 16 July 2026 · Bengaluru</div>
+    <div class="small">© 2026 Creative Cardboard</div>
+  </div>
+</footer>
+
+<script>
+function submitOrder(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const product=document.getElementById('product').value;
+  const qty=document.getElementById('qty').value;
+  const notes=document.getElementById('notes').value.trim();
+  document.getElementById('result').textContent =
+    `Order summary: ${name} — ${qty} × ${product}${notes ? ' — Customization: '+notes : ''}. Please show this summary to the CCP team to confirm the order.`;
+}
+</script>
+</body>
+</html>
