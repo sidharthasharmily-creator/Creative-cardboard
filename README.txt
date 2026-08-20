@@ -1,0 +1,1 @@
+Upload ALL files and the products folder to the ROOT of your GitHub repository. index.html is the homepage. Replace PHOTO TO BE PUT LATER boxes with your real photos when ready.
