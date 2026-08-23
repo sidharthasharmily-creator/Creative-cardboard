@@ -1,11 +1,17 @@
-Creative Cardboard updated website.
+CREATIVE CARDBOARD — DITTO STORY EDITION
 
-Team:
-Arinjay — CEO & Head of Marketing
-Riyansh — Co-Founder & Head of Advertisement
-Atharva — CTO & Website Manager
-Aadit — Head of Games & Craft
+This version keeps the existing CCP website design and adds a much larger company story
+to the Home and Community pages.
 
-Ayansh is no longer listed as a team member.
+Included:
+- Home page with expanded CCP story
+- Community page with full company journey
+- Products page and individual product pages
+- Legal page
+- Order page
+- Paper craft products and existing product pricing
+- Dagger photos in images/
+- Existing website styling/navigation preserved
 
-Upload the CONTENTS of this ZIP to the ROOT of your GitHub repository.
+For GitHub Pages/Vercel:
+Upload the contents of this ZIP into the repository root, keeping the folder structure.
