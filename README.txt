@@ -1,11 +1,4 @@
-Creative Cardboard updated website.
+Creative Cardboard & Paper website
 
-Team:
-Arinjay — CEO & Head of Marketing
-Riyansh — Co-Founder & Head of Advertisement
-Atharva — CTO & Website Manager
-Aadit — Head of Games & Craft
-
-Ayansh is no longer listed as a team member.
-
-Upload the CONTENTS of this ZIP to the ROOT of your GitHub repository.
+Upload index.html to the root of your GitHub repository.
+The website has Atharva as CTO, a sales bar for every product, and Karan's dagger review at 4.5 stars.
