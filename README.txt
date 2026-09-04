@@ -1,4 +1,9 @@
-Creative Cardboard & Paper website
+CREATIVE CARDBOARD — SCROLL BACKGROUND PATCH
 
-Upload index.html to the root of your GitHub repository.
-The website has Atharva as CTO, a sales bar for every product, and Karan's dagger review at 4.5 stars.
+This small patch is ONLY for the scrolling background-colour effect.
+
+I need your existing website files to place it correctly without changing
+anything else. Upload your website/repository ZIP to ChatGPT after extracting
+this folder, or upload the repository ZIP directly.
+
+Do NOT replace your whole website with this patch.
