@@ -9,7 +9,7 @@
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;transition:background-color .5s ease}
 header{position:sticky;top:0;z-index:20;background:#0d1014f2;border-bottom:1px solid #292e36}.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:20px}.logo b{color:#ffb52e}
 .menu{width:48px;height:44px;border:1px solid #343a44;background:#151920;border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}.menu span{height:2px;background:white;width:100%}
 .drawer{display:none;position:absolute;right:20px;top:70px;width:235px;background:#151920;border:1px solid #343a44;border-radius:15px;padding:8px;box-shadow:0 15px 40px #000}.drawer.open{display:block}.drawer a{display:block;color:#fff;text-decoration:none;padding:13px;border-radius:9px}.drawer a:hover{background:#252b34;color:#ffb52e}
@@ -29,7 +29,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <nav id="drawer" class="drawer">
 <a href="#home">Home</a><a href="#products">Products</a><a href="#story">Story</a><a href="#community">Community</a><a href="#reviews">Reviews</a><a href="#order">Order Now</a><a href="#legal">Legal</a>
 </nav></div></header>
-
 <main>
 <section id="home" class="page hero"><div>
 <div class="k">Handmade • Creative • Collectible</div>
@@ -37,7 +36,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <p class="lead">Welcome to Creative Cardboard & Paper — a creative handmade business turning simple paper and cardboard into useful products, collectibles and fun crafts.</p>
 <a class="btn" href="#products">Explore Products →</a>
 </div></section>
-
 <section id="products" class="page"><div class="k">Products</div><h2>Made by hand.</h2>
 <p class="sub">All prices are in INR. Selected products can be customized with colours, names and printing.</p>
 <div class="grid">
@@ -51,7 +49,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <div class="card"><h3>Paper Kunai</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p></div>
 <div class="card"><h3>Paper Knife</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p></div>
 </div></section>
-
 <section id="story" class="page"><div class="k">Our Story</div><h2>From cardboard to a real little business.</h2>
 <div class="story">
 <p>Creative Cardboard & Paper started on <b>16 July 2026</b> with a simple idea: turn ordinary paper and cardboard into things people would actually enjoy. We started small, experimented with products and slowly built a business around creativity.</p>
@@ -60,7 +57,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <p>The most important part of CCP is the team. People have helped with marketing, advertising, technology, games, craft and sales. We have changed roles as we have grown, and every change has taught us more about teamwork and responsibility.</p>
 <p>We are proud of every order, every review and every new idea. CCP is still growing, but that is the fun of it: <b>start small, create something, learn from it and make the next version better.</b></p>
 </div></section>
-
 <section id="community" class="page"><div class="k">Community</div><h2>Meet the team.</h2><p class="sub">Different skills, one creative project.</p>
 <div class="grid">
 <div class="card"><h3>Arinjay</h3><p class="sub">CEO & Head of Marketing</p></div>
@@ -78,7 +74,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <div class="bar"><div class="barhead"><span>Paper Kunai</span><span>1 sold</span></div><div class="track"><div class="fill" style="width:25%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Paper Knife</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 </section>
-
 <section id="reviews" class="page"><div class="k">Customer Reviews</div><h2>What customers say.</h2>
 <div class="grid">
 <div class="card"><h3>Mohit — Pen</h3><div class="stars">★★★★★</div><p>“The pen was nice. The customization was beautiful. Loved it!”</p></div>
@@ -90,7 +85,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <div class="card"><h3>Avyaan — Paper Crafts</h3><div class="stars">★★★★★</div><p>“The paper crafts were good, nice and good-looking.”</p></div>
 <div class="card"><h3>Karan — Paper Dagger</h3><div class="stars">★★★★½</div><p>“It is very good and has very good facilities too, and it is a good place to make friends with the founders.”</p></div>
 </div></section>
-
 <section id="order" class="page"><div class="k">Order Now</div><h2>Tell us what you want.</h2>
 <p class="sub">Choose a product, quantity and any customization. WhatsApp: <b>+91 83107 71159</b>. Shipping cost, if any, will be told on WhatsApp.</p>
 <form onsubmit="sendOrder(event)">
@@ -102,7 +96,6 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <div class="field"><label>Customization / details</label><textarea id="details" placeholder="Colour, name, printing, player choice, etc."></textarea></div>
 <button class="btn" type="submit">Send Order on WhatsApp</button>
 </form></section>
-
 <section id="legal" class="page"><div class="k">Legal</div><h2>Simple & clear.</h2>
 <p class="sub">All prices are in INR. Products are handmade craft and stationery items. Customization depends on the product. Shipping cost, if any, will be communicated on WhatsApp before confirmation.</p>
 <p class="sub">Contact: <b>+91 83107 71159</b></p></section>
@@ -111,11 +104,30 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <script>
 function sendOrder(e){
 e.preventDefault();
-const msg="Creative Cardboard Order\nName: "+document.getElementById("customerName").value+
-"\nProduct: "+document.getElementById("product").value+
-"\nQuantity: "+document.getElementById("qty").value+
-"\nDetails: "+(document.getElementById("details").value||"None");
+const msg="Creative Cardboard Order
+Name: "+document.getElementById("customerName").value+
+"
+Product: "+document.getElementById("product").value+
+"
+Quantity: "+document.getElementById("qty").value+
+"
+Details: "+(document.getElementById("details").value||"None");
 location.href="https://wa.me/918310771159?text="+encodeURIComponent(msg);
 }
+</script>
+
+<!-- ONLY ADDITION: change the page background as the visitor scrolls -->
+<script>
+(() => {
+  const colors=["#090b0e","#101827","#17251c","#211a2b","#2a2115"];
+  function updateBackground(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    const progress=max>0 ? window.scrollY/max : 0;
+    const index=Math.min(colors.length-1,Math.floor(progress*colors.length));
+    document.body.style.backgroundColor=colors[index];
+  }
+  window.addEventListener("scroll",updateBackground,{passive:true});
+  updateBackground();
+})();
 </script>
 </body></html>
