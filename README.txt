@@ -1,9 +1,9 @@
-CREATIVE CARDBOARD — SCROLL BACKGROUND PATCH
+Creative Cardboard & Paper website
 
-This small patch is ONLY for the scrolling background-colour effect.
+Files:
+- index.html : main website
+- style.css : website styling
+- script.js : buttons, order form, product info, scrolling background
 
-I need your existing website files to place it correctly without changing
-anything else. Upload your website/repository ZIP to ChatGPT after extracting
-this folder, or upload the repository ZIP directly.
-
-Do NOT replace your whole website with this patch.
+Upload all 3 website files (index.html, style.css, script.js) to the same folder/repository.
+Open index.html to test the website.

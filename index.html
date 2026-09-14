@@ -3,61 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <title>Creative Cardboard & Paper</title>
-<script>
-window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-<style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;transition:background .7s ease}
-header{position:sticky;top:0;z-index:20;background:#0d1014f2;border-bottom:1px solid #292e36}.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:20px}.logo b{color:#ffb52e}
-.menu{width:48px;height:44px;border:1px solid #343a44;background:#151920;border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}.menu span{height:2px;background:white;width:100%}
-.drawer{display:none;position:absolute;right:20px;top:70px;width:235px;background:#151920;border:1px solid #343a44;border-radius:15px;padding:8px;box-shadow:0 15px 40px #000}.drawer.open{display:block}.drawer a{display:block;color:#fff;text-decoration:none;padding:13px;border-radius:9px}.drawer a:hover{background:#252b34;color:#ffb52e}
-main{max-width:1100px;margin:auto}.page{padding:72px 22px;border-bottom:1px solid #292e36;min-height:55vh}.hero{min-height:78vh;display:flex;align-items:center;background:radial-gradient(circle at 80% 30%,#7a551c55,transparent 35%)}
-.k{color:#ffb52e;font-weight:800;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(44px,8vw,82px);line-height:.95;margin:15px 0}h2{font-size:42px;margin:10px 0}.lead,.sub{color:#aeb6c1;line-height:1.65;max-width:760px}.btn{display:inline-block;margin-top:18px;padding:14px 20px;background:#ffb52e;color:#111;border:0;border-radius:11px;font-weight:800;text-decoration:none;cursor:pointer}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}.card{background:#151920;border:1px solid #2d333d;border-radius:17px;padding:21px}.card h3{margin-top:0}.price{font-size:24px;font-weight:900;color:#ffb52e;margin:10px 0}.stars{color:#ffb52e;letter-spacing:2px;font-size:18px}.story{font-size:18px;line-height:1.85;color:#d7dce3}
-.info-btn{margin-top:10px;padding:10px 14px;border:1px solid #ffb52e;background:transparent;color:#ffb52e;border-radius:9px;font-weight:800;cursor:pointer}.info-btn:hover{background:#ffb52e;color:#111}
-.modal{display:none;position:fixed;inset:0;z-index:100;background:#000b;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{max-width:520px;width:100%;background:#151920;border:1px solid #343a44;border-radius:17px;padding:24px;box-shadow:0 20px 60px #000}.modal-box h3{margin-top:0;font-size:28px}.close{float:right;border:0;background:transparent;color:#fff;font-size:28px;cursor:pointer}.modal-box p{color:#cbd2dc;line-height:1.7}.modal-box ul{color:#cbd2dc;line-height:1.8}
-.field{margin:14px 0}.field label{display:block;font-weight:bold;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;max-width:680px;padding:13px;border-radius:10px;border:1px solid #343a44;background:#0e1115;color:#fff;font:inherit}.field textarea{min-height:120px}
-.bar{max-width:680px;margin:14px 0}.barhead{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;color:#ccd2da}.track{height:14px;background:#292f37;border-radius:20px}.fill{height:100%;background:#ffb52e;border-radius:20px}
-footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36}
-@media(max-width:600px){.page{padding:55px 18px}h2{font-size:34px}}
-</style>
-
-<style>
-body{
-  background:linear-gradient(135deg,#08111f,#1b1230 48%,#092b31);
-  background-attachment:fixed;
-}
-header{
-  background:linear-gradient(90deg,rgba(7,12,25,.96),rgba(45,18,55,.96));
-  border-bottom:1px solid rgba(255,209,102,.35);
-}
-.card,.product,.review,.box{
-  box-shadow:0 10px 30px rgba(0,0,0,.22);
-  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
-  border-color:rgba(255,209,102,.22)!important;
-}
-.card:hover,.product:hover,.review:hover,.box:hover{
-  transform:translateY(-4px);
-  border-color:rgba(239,71,111,.55)!important;
-  box-shadow:0 14px 34px rgba(123,97,255,.22);
-}
-button,.btn{
-  background:linear-gradient(135deg,#ffd166,#ff8c42)!important;
-  color:#151515!important;
-  font-weight:700;
-}
-h1,h2,h3{
-  background:linear-gradient(90deg,#ffd166,#ff8c42,#ef476f,#7b61ff);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-a{color:#8be9fd}
-input,select,textarea{
-  border-color:rgba(255,209,102,.3)!important;
-  background:rgba(255,255,255,.055)!important;
-}
-</style>
 </head>
 <body>
 <header><div class="nav">
@@ -72,22 +19,25 @@ input,select,textarea{
 <div class="k">Handmade • Creative • Collectible</div>
 <h1>Small ideas.<br>Big creativity.</h1>
 <p class="lead">Welcome to Creative Cardboard & Paper — a creative handmade business turning simple paper and cardboard into useful products, collectibles and fun crafts.</p>
-<a class="btn" href="#products">Explore Products →</a>
+<a class="btn" href="#products">Explore Products →</a><p class="lead" style="margin-top:20px;font-weight:900;">🪔 Dussehra SaleBration — Coming Soon!</p>
 </div></section>
 
-<section id="products" class="page"><div class="k">Products</div><h2>Made by hand.</h2>
+<section id="products" class="page"><div class="products-grid">
+<div class="k">Products</div><h2>Made by hand.</h2>
 <p class="sub">All prices are in INR. Selected products can be customized with colours, names and printing.</p>
 <div class="grid">
-
-<div class="card"><h3>Customized Pen</h3><div class="price">₹10</div><p class="sub">Personalized handmade stationery.</p><button class="info-btn" onclick="showInfo('Customized Pen','Personalized handmade stationery. You can request a colour, name/text, or simple decoration.')">Info</button></div>
-
-<div class="card"><h3>Mini Notebook</h3><div class="price">₹10</div><p class="sub">Handmade notebook for notes and trips.</p><button class="info-btn" onclick="showInfo('Mini Notebook','A small handmade notebook for notes, ideas and trips. Customization can include cover colour, name/text and simple cover decoration.')">Info</button></div>
-
-<div class="card"><h3>Mini Binder</h3><div class="price">₹15</div><p class="sub">Compact customizable binder.</p><button class="info-btn" onclick="showInfo('Mini Binder','A compact handmade binder. You can request cover colours, name/text and simple decorative details.')">Info</button></div>
-
-<div class="card"><h3>Bookmark</h3><div class="price">₹2</div><p class="sub">Simple handmade bookmark.</p><button class="info-btn" onclick="showInfo('Bookmark','A simple handmade bookmark. Customization can include colour, name/text and small decorative designs.')">Info</button></div>
-
-</div></section>
+<div class="card"><h3>Customized Pen</h3><div class="price">₹10</div><p class="sub">Personalized handmade stationery.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Customized Pen" data-price="₹10">Info</button></div>
+<div class="card"><h3>Mini Notebook</h3><div class="price">₹10</div><p class="sub">Handmade notebook for notes and trips.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Mini Notebook" data-price="₹10">Info</button></div>
+<div class="card"><h3>Mini Binder</h3><div class="price">₹15</div><p class="sub">Compact customizable binder.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Mini Binder" data-price="₹15">Info</button></div>
+<div class="card"><h3>Bookmark</h3><div class="price">₹2</div><p class="sub">Simple handmade bookmark.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Bookmark" data-price="₹2">Info</button></div>
+<div class="card"><h3>Football Cards</h3><div class="price">₹30</div><p class="sub">Handmade football collectibles.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Football Cards" data-price="₹30">Info</button></div>
+<div class="card"><h3>Paper Katana</h3><div class="price">₹50</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Katana" data-price="₹50">Info</button></div>
+<div class="card"><h3>Paper Dagger</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Dagger" data-price="₹20">Info</button></div>
+<div class="card"><h3>Paper Kunai</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Kunai" data-price="₹20">Info</button></div>
+<div class="card"><h3>Paper Knife</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Knife" data-price="₹20">Info</button></div>
+<div class="card"><h3>Weaponry Handmade Cards — Blast Set</h3><div class="price">₹15 / pack</div><p class="sub">The first set of our handmade collectible card game.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Weaponry Handmade Cards — Blast Set" data-price="₹15 / pack">Info</button></div>
+<div class="card"><h3>Dakchi</h3><div class="price">₹20</div><p class="sub">A new Creative Cardboard & Paper handmade product.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Dakchi" data-price="₹20">Info</button></div>
+</div></div></section>
 
 <section id="story" class="page"><div class="k">Our Story</div><h2>From cardboard to a real little business.</h2>
 <div class="story">
@@ -102,13 +52,20 @@ input,select,textarea{
 <div class="grid">
 <div class="card"><h3>Arinjay</h3><p class="sub">CEO & Head of Marketing</p></div>
 <div class="card"><h3>Riyansh</h3><p class="sub">Co-founder & Head of Advertisement</p></div>
-<div class="card"><h3>Aadit</h3><p class="sub">Head of Games & Craft</p></div><div class="card"><h3>Atharva</h3><p class="sub">CTO</p></div>
+<div class="card"><h3>Aarav</h3><p class="sub">Team Member</p></div>
 </div>
-<h3 style="margin-top:40px">Sales bar graph — safe stationery products</h3>
-<div class="bar"><div class="barhead"><span>Customized Pen</span><span>3 sold</span></div><div class="track"><div class="fill" style="width:75%"></div></div></div>
-<div class="bar"><div class="barhead"><span>Mini Notebook</span><span>4 sold</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
-<div class="bar"><div class="barhead"><span>Mini Binder</span><span>4 sold</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
-<div class="bar"><div class="barhead"><span>Bookmark</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+<h3 style="margin-top:40px">Sales bar graph</h3>
+<div class="bar"><div class="barhead"><span>Pens</span><span>4 sold</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Notebooks</span><span>5 sold</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Binders</span><span>4 sold</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Bookmarks</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Football Cards</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Paper Katana</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Paper Dagger</span><span>3 sold</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Paper Kunai</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Paper Knife</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Dakchi</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Weaponry Handmade Cards — Blast Set</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 </section>
 
 <section id="reviews" class="page"><div class="k">Customer Reviews</div><h2>What customers say.</h2>
@@ -120,6 +77,7 @@ input,select,textarea{
 <div class="card"><h3>Saarth — Binder #2</h3><div class="stars">★★★★★</div><p>“Perfect. No mistakes. Very good.”</p></div>
 <div class="card"><h3>Avyaan — 2 Pens</h3><div class="stars">★★★☆☆</div><p>“The pens were good, but they were a little sticky.”</p></div>
 <div class="card"><h3>Avyaan — Paper Crafts</h3><div class="stars">★★★★★</div><p>“The paper crafts were good, nice and good-looking.”</p></div>
+<div class="card"><h3>Karan — Paper Dagger</h3><div class="stars">★★★★★</div><p>“It is very good and has very good facilities too, and it is a good place to make friends with the founders.”</p></div>
 </div></section>
 
 <section id="order" class="page"><div class="k">Order Now</div><h2>Tell us what you want.</h2>
@@ -127,10 +85,10 @@ input,select,textarea{
 <form onsubmit="sendOrder(event)">
 <div class="field"><label>Your name</label><input id="customerName" required></div>
 <div class="field"><label>Product</label><select id="product" required>
-<option value="">Select product</option><option>Customized Pen — ₹10</option><option>Mini Notebook — ₹10</option><option>Mini Binder — ₹15</option><option>Bookmark — ₹2</option>
-</select></div>
+<option value="">Select product</option><option>Customized Pen — ₹10</option><option>Mini Notebook — ₹10</option><option>Mini Binder — ₹15</option><option>Bookmark — ₹2</option><option>Football Cards — ₹30</option><option>Paper Katana — ₹50</option><option>Paper Dagger — ₹20</option><option>Paper Kunai — ₹20</option><option>Paper Knife — ₹20</option>
+<option>Dakchi — ₹20</option><option>Weaponry Handmade Cards — Blast Set — ₹15 / pack</option></select></div>
 <div class="field"><label>Quantity</label><input id="qty" type="number" min="1" value="1" required></div>
-<div class="field"><label>Customization / details</label><textarea id="details" placeholder="Colour, name, printing, etc."></textarea></div>
+<div class="field"><label>Customization / details</label><textarea id="details" placeholder="Colour, name, printing, player choice, etc."></textarea></div>
 <button class="btn" type="submit">Send Order on WhatsApp</button>
 </form></section>
 
@@ -138,26 +96,10 @@ input,select,textarea{
 <p class="sub">All prices are in INR. Products are handmade craft and stationery items. Customization depends on the product. Shipping cost, if any, will be communicated on WhatsApp before confirmation.</p>
 <p class="sub">Contact: <b>+91 83107 71159</b></p></section>
 </main>
-
-<div id="infoModal" class="modal" onclick="if(event.target===this) closeInfo()">
-<div class="modal-box"><button class="close" onclick="closeInfo()" aria-label="Close">×</button><h3 id="infoTitle"></h3><p id="infoText"></p><button class="btn" onclick="closeInfo()">Close</button></div>
-</div>
-
 <footer>© Creative Cardboard & Paper • Made with creativity</footer>
-
-<script>
-function showInfo(title,text){document.getElementById('infoTitle').textContent=title;document.getElementById('infoText').textContent=text;document.getElementById('infoModal').classList.add('show')}
-function closeInfo(){document.getElementById('infoModal').classList.remove('show')}
-function sendOrder(e){
-e.preventDefault();
-const msg="Creative Cardboard Order\nName: "+document.getElementById("customerName").value+
-"\nProduct: "+document.getElementById("product").value+
-"\nQuantity: "+document.getElementById("qty").value+
-"\nDetails: "+(document.getElementById("details").value||"None");
-location.href="https://wa.me/918310771159?text="+encodeURIComponent(msg);
-}
-const scrollColors=["#090b0e","#101827","#17251c","#211a2b","#2a2115"];
-window.addEventListener("scroll",function(){const max=document.documentElement.scrollHeight-window.innerHeight;const p=max>0?window.scrollY/max:0;const i=Math.min(scrollColors.length-1,Math.floor(p*(scrollColors.length-1)));document.body.style.background=scrollColors[i]});
-</script>
-</body>
-</html>
+<div id="productInfoModal" onclick="if(event.target===this)closeProductInfo()">
+<div class="info-box"><h2 id="infoName"></h2><div class="info-price" id="infoPrice"></div>
+<p id="infoDescription"></p><div id="infoRules"></div>
+<button class="btn" type="button" onclick="closeProductInfo()">Close</button></div></div>
+<script src="script.js"></script>
+</body></html>
