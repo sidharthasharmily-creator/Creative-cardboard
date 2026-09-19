@@ -1,18 +1,1 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif}
-header{position:sticky;top:0;z-index:20;background:#0d1014f2;border-bottom:1px solid #292e36}.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:20px}.logo b{color:#ffb52e}
-.menu{width:48px;height:44px;border:1px solid #343a44;background:#151920;border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}.menu span{height:2px;background:white;width:100%}
-.drawer{display:none;position:absolute;right:20px;top:70px;width:235px;background:#151920;border:1px solid #343a44;border-radius:15px;padding:8px;box-shadow:0 15px 40px #000}.drawer.open{display:block}.drawer a{display:block;color:#fff;text-decoration:none;padding:13px;border-radius:9px}.drawer a:hover{background:#252b34;color:#ffb52e}
-main{max-width:1100px;margin:auto}.page{padding:72px 22px;border-bottom:1px solid #292e36;min-height:55vh}.hero{min-height:78vh;display:flex;align-items:center;background:radial-gradient(circle at 80% 30%,#7a551c55,transparent 35%)}
-.k{color:#ffb52e;font-weight:800;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(44px,8vw,82px);line-height:.95;margin:15px 0}h2{font-size:42px;margin:10px 0}.lead,.sub{color:#aeb6c1;line-height:1.65;max-width:760px}.btn{display:inline-block;margin-top:18px;padding:14px 20px;background:#ffb52e;color:#111;border:0;border-radius:11px;font-weight:800;text-decoration:none;cursor:pointer}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}.card{background:#151920;border:1px solid #2d333d;border-radius:17px;padding:21px}.card h3{margin-top:0}.price{font-size:24px;font-weight:900;color:#ffb52e;margin:10px 0}.stars{color:#ffb52e;letter-spacing:2px;font-size:18px}.story{font-size:18px;line-height:1.85;color:#d7dce3}
-.field{margin:14px 0}.field label{display:block;font-weight:bold;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;max-width:680px;padding:13px;border-radius:10px;border:1px solid #343a44;background:#0e1115;color:#fff;font:inherit}.field textarea{min-height:120px}
-.bar{max-width:680px;margin:14px 0}.barhead{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;color:#ccd2da}.track{height:14px;background:#292f37;border-radius:20px}.fill{height:100%;background:#ffb52e;border-radius:20px}
-footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36}
-@media(max-width:600px){.page{padding:55px 18px}h2{font-size:34px}}
-
-.product-info-btn{margin-top:18px;margin-left:8px}
-#productInfoModal{display:none;position:fixed;inset:0;z-index:1000;background:#000b;align-items:center;justify-content:center;padding:20px}
-#productInfoModal .info-box{width:min(560px,100%);background:#151920;border:1px solid #343a44;border-radius:17px;padding:24px;box-shadow:0 15px 40px #000}
-#productInfoModal h2{font-size:30px;margin:0 0 8px}
-#productInfoModal .info-price{font-size:22px;font-weight:900;color:#ffb52e;margin-bottom:16px}
-#productInfoModal p,#productInfoModal li{color:#d7dce3;line-height:1.65}
+/* Styles are included inside index.html to preserve the original single-file design. */
