@@ -3,8 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css">
 <title>Creative Cardboard & Paper</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:20;background:#0d1014f2;border-bottom:1px solid #292e36}.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:20px}.logo b{color:#ffb52e}
+.menu{width:48px;height:44px;border:1px solid #343a44;background:#151920;border-radius:12px;padding:10px;display:flex;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}.menu span{height:2px;background:white;width:100%}
+.drawer{display:none;position:absolute;right:20px;top:70px;width:235px;background:#151920;border:1px solid #343a44;border-radius:15px;padding:8px;box-shadow:0 15px 40px #000}.drawer.open{display:block}.drawer a{display:block;color:#fff;text-decoration:none;padding:13px;border-radius:9px}.drawer a:hover{background:#252b34;color:#ffb52e}
+main{max-width:1100px;margin:auto}.page{padding:72px 22px;border-bottom:1px solid #292e36;min-height:55vh}.hero{min-height:78vh;display:flex;align-items:center;background:radial-gradient(circle at 80% 30%,#7a551c55,transparent 35%)}
+.k{color:#ffb52e;font-weight:800;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(44px,8vw,82px);line-height:.95;margin:15px 0}h2{font-size:42px;margin:10px 0}.lead,.sub{color:#aeb6c1;line-height:1.65;max-width:760px}.btn{display:inline-block;margin-top:18px;padding:14px 20px;background:#ffb52e;color:#111;border:0;border-radius:11px;font-weight:800;text-decoration:none;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}.card{background:#151920;border:1px solid #2d333d;border-radius:17px;padding:21px}.card h3{margin-top:0}.price{font-size:24px;font-weight:900;color:#ffb52e;margin:10px 0}.stars{color:#ffb52e;letter-spacing:2px;font-size:18px}.story{font-size:18px;line-height:1.85;color:#d7dce3}
+.field{margin:14px 0}.field label{display:block;font-weight:bold;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;max-width:680px;padding:13px;border-radius:10px;border:1px solid #343a44;background:#0e1115;color:#fff;font:inherit}.field textarea{min-height:120px}
+.bar{max-width:680px;margin:14px 0}.barhead{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px;color:#ccd2da}.track{height:14px;background:#292f37;border-radius:20px}.fill{height:100%;background:#ffb52e;border-radius:20px}
+footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36}
+@media(max-width:600px){.page{padding:55px 18px}h2{font-size:34px}}
+</style>
 </head>
 <body>
 <header><div class="nav">
@@ -19,7 +31,7 @@
 <div class="k">Handmade • Creative • Collectible</div>
 <h1>Small ideas.<br>Big creativity.</h1>
 <p class="lead">Welcome to Creative Cardboard & Paper — a creative handmade business turning simple paper and cardboard into useful products, collectibles and fun crafts.</p>
-<a class="btn" href="#products">Explore Products →</a><p class="lead" style="margin-top:20px;font-weight:900;">🪔 Dussehra SaleBration — Coming Soon!</p>
+<a class="btn" href="#products">Explore Products →</a><p class="lead" style="margin-top:20px;font-weight:900;">🪔 Dussehra SaleBration — Slingshot and Shericanes Coming Soon!</p>
 </div></section>
 
 <section id="products" class="page"><div class="products-grid">
@@ -30,7 +42,7 @@
 <div class="card"><h3>Mini Notebook</h3><div class="price">₹10</div><p class="sub">Handmade notebook for notes and trips.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Mini Notebook" data-price="₹10">Info</button></div>
 <div class="card"><h3>Mini Binder</h3><div class="price">₹15</div><p class="sub">Compact customizable binder.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Mini Binder" data-price="₹15">Info</button></div>
 <div class="card"><h3>Bookmark</h3><div class="price">₹2</div><p class="sub">Simple handmade bookmark.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Bookmark" data-price="₹2">Info</button></div>
-<div class="card"><h3>Football Cards</h3><div class="price">₹30</div><p class="sub">Handmade football collectibles.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Football Cards" data-price="₹30">Info</button></div>
+<div class="card"><h3>Ninja Stars</h3><div class="price">From ₹15</div><p class="sub">Five handmade ninja star types, with small, medium and large sizes.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Ninja Stars" data-price="See sizes & prices">Info</button></div>
 <div class="card"><h3>Paper Katana</h3><div class="price">₹50</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Katana" data-price="₹50">Info</button></div>
 <div class="card"><h3>Paper Dagger</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Dagger" data-price="₹20">Info</button></div>
 <div class="card"><h3>Paper Kunai</h3><div class="price">₹20</div><p class="sub">Paper-only display craft.</p><button class="btn product-info-btn" type="button" onclick="showProductInfo(this)" data-name="Paper Kunai" data-price="₹20">Info</button></div>
@@ -55,15 +67,15 @@
 <div class="card"><h3>Aarav</h3><p class="sub">Team Member</p></div>
 </div>
 <h3 style="margin-top:40px">Sales bar graph</h3>
-<div class="bar"><div class="barhead"><span>Pens</span><span>4 sold</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Pens</span><span>3 sold</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Notebooks</span><span>5 sold</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Binders</span><span>4 sold</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Bookmarks</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
-<div class="bar"><div class="barhead"><span>Football Cards</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Paper Katana</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Paper Dagger</span><span>3 sold</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Paper Kunai</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
-<div class="bar"><div class="barhead"><span>Paper Knife</span><span>2 sold</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Paper Knife</span><span>1 sold</span></div><div class="track"><div class="fill" style="width:20%"></div></div></div>
+<div class="bar"><div class="barhead"><span>Ninja Stars</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Dakchi</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 <div class="bar"><div class="barhead"><span>Weaponry Handmade Cards — Blast Set</span><span>0 sold</span></div><div class="track"><div class="fill" style="width:0%"></div></div></div>
 </section>
@@ -85,7 +97,7 @@
 <form onsubmit="sendOrder(event)">
 <div class="field"><label>Your name</label><input id="customerName" required></div>
 <div class="field"><label>Product</label><select id="product" required>
-<option value="">Select product</option><option>Customized Pen — ₹10</option><option>Mini Notebook — ₹10</option><option>Mini Binder — ₹15</option><option>Bookmark — ₹2</option><option>Football Cards — ₹30</option><option>Paper Katana — ₹50</option><option>Paper Dagger — ₹20</option><option>Paper Kunai — ₹20</option><option>Paper Knife — ₹20</option>
+<option value="">Select product</option><option>Customized Pen — ₹10</option><option>Mini Notebook — ₹10</option><option>Mini Binder — ₹15</option><option>Bookmark — ₹2</option><option>Paper Katana — ₹50</option><option>Ninja Stars — see sizes & prices</option><option>Paper Dagger — ₹20</option><option>Paper Kunai — ₹20</option><option>Paper Knife — ₹20</option>
 <option>Dakchi — ₹20</option><option>Weaponry Handmade Cards — Blast Set — ₹15 / pack</option></select></div>
 <div class="field"><label>Quantity</label><input id="qty" type="number" min="1" value="1" required></div>
 <div class="field"><label>Customization / details</label><textarea id="details" placeholder="Colour, name, printing, player choice, etc."></textarea></div>
@@ -97,9 +109,71 @@
 <p class="sub">Contact: <b>+91 83107 71159</b></p></section>
 </main>
 <footer>© Creative Cardboard & Paper • Made with creativity</footer>
+<script>
+function sendOrder(e){
+e.preventDefault();
+const msg="Creative Cardboard Order\nName: "+document.getElementById("customerName").value+
+"\nProduct: "+document.getElementById("product").value+
+"\nQuantity: "+document.getElementById("qty").value+
+"\nDetails: "+(document.getElementById("details").value||"None");
+location.href="https://wa.me/918310771159?text="+encodeURIComponent(msg);
+}
+</script>
+
+
+
+
+<style>
+.product-info-btn{margin-top:18px;margin-left:8px}
+#productInfoModal{display:none;position:fixed;inset:0;z-index:1000;background:#000b;align-items:center;justify-content:center;padding:20px}
+#productInfoModal .info-box{width:min(560px,100%);background:#151920;border:1px solid #343a44;border-radius:17px;padding:24px;box-shadow:0 15px 40px #000}
+#productInfoModal h2{font-size:30px;margin:0 0 8px}
+#productInfoModal .info-price{font-size:22px;font-weight:900;color:#ffb52e;margin-bottom:16px}
+#productInfoModal p,#productInfoModal li{color:#d7dce3;line-height:1.65}
+</style>
 <div id="productInfoModal" onclick="if(event.target===this)closeProductInfo()">
 <div class="info-box"><h2 id="infoName"></h2><div class="info-price" id="infoPrice"></div>
 <p id="infoDescription"></p><div id="infoRules"></div>
 <button class="btn" type="button" onclick="closeProductInfo()">Close</button></div></div>
-<script src="script.js"></script>
+<script>
+function showProductInfo(b){
+const n=b.dataset.name,p=b.dataset.price;
+document.getElementById("infoName").textContent=n;
+document.getElementById("infoPrice").textContent=p;
+const d={
+"Customized Pen":"Personalized handmade stationery. Customization can include colours, names and printing.",
+"Mini Notebook":"A handmade mini notebook for notes, ideas, schoolwork and trips.",
+"Mini Binder":"A compact handmade binder designed for cards and small collections.",
+"Bookmark":"A simple handmade bookmark for keeping your place in a book.",
+
+"Paper Katana":"A paper-only decorative display craft.",
+"Paper Dagger":"A paper-only decorative display craft.",
+"Paper Kunai":"A paper-only decorative display craft.",
+"Paper Knife":"A paper-only decorative display craft.",
+"Dakchi":"A handmade Creative Cardboard & Paper craft product.",
+"Ninja Stars":"Five types: Normal — Small ₹17, Medium ₹15, Large ₹20. Square — Small ₹22, Medium ₹35, Large ₹40. Transformer — Small ₹80, Medium ₹120, Large ₹150. Ninja Mat — Small ₹60, Medium ₹70, Large ₹90. Double Star — Small ₹25, Medium ₹45, Large ₹50. Prices change every Sunday because this is sourced from a wholesaler whose prices change every Sunday.",
+"Weaponry Handmade Cards — Blast Set":"The Blast Set is the first set of our handmade card game. It is a handmade collectible game-card set featuring fictional grenade-themed and bomb-themed cards.",
+"Dakchi":"A handmade Creative Cardboard & Paper product."
+};
+document.getElementById("infoDescription").textContent=d[n]||"A handmade Creative Cardboard & Paper product.";
+document.getElementById("infoRules").innerHTML=n==="Weaponry Handmade Cards — Blast Set"?
+"<ul><li>You need at least <strong>5 cards</strong> to play the game.</li><li>The rulebook costs <strong>₹2</strong> when bought separately.</li><li>The rulebook is <strong>FREE with every pack</strong>.</li></ul>":"";
+document.getElementById("productInfoModal").style.display="flex";
+}
+function closeProductInfo(){document.getElementById("productInfoModal").style.display="none";}
+</script>
+
+<script>
+(() => {
+  const colors=["#090b0e","#101827","#17251c","#211a2b","#2a2115"];
+  function updateBackground(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    const progress=max>0 ? window.scrollY/max : 0;
+    const index=Math.min(colors.length-1,Math.floor(progress*colors.length));
+    document.body.style.backgroundColor=colors[index];
+  }
+  window.addEventListener("scroll",updateBackground,{passive:true});
+  updateBackground();
+})();
+</script>
 </body></html>
