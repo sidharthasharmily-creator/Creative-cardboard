@@ -1,1 +1,7 @@
-Extract this ZIP and upload all five files to the same GitHub repository folder.
+UPLOAD ALL 5 FILES TO THE SAME WEBSITE FOLDER:
+
+index.html
+style.css
+script.js
+README.txt
+UPLOAD.txt

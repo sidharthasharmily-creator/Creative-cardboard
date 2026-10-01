@@ -1,4 +1,3 @@
-CCP website update: Karan added as a Team Member. Upload all files together.
+CCP Dussehra Website Update
 
-
-Final update (27 Sep 2026): Karan is listed as Sales Manager; Aarav is removed from the team; the homepage now mentions new types of Ninja Stars instead of slingshots; and the October 1st Ninja Stars notice was added. No new review was added because no newer review was available in the supplied CCP information.
+Upload all five files together. The uploaded Dussehra document's new products, Ninja Stars, bundles and bonus offers have replaced the older offer section. Football Cards were removed.

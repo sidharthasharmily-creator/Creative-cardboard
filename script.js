@@ -1,1 +1,1 @@
-// Existing CCP scripts remain embedded in index.html.
+// Existing CCP scripts are embedded in index.html.
