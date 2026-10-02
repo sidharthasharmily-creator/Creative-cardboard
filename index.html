@@ -31,7 +31,7 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 <div class="k">Handmade • Creative • Collectible</div>
 <h1>Small ideas.<br>Big creativity.</h1>
 <p class="lead">Welcome to Creative Cardboard & Paper — a creative handmade business turning simple paper and cardboard into useful products, collectibles and fun crafts.</p>
-<a class="btn" href="#products">Explore Products →</a><p class="lead" style="margin-top:20px;font-weight:900;">🪔 Dussehra SaleBration — Coming Soon!</p>
+<a class="btn" href="#products">Explore Products →</a><p class="lead" style="margin-top:20px;font-weight:900;">🪔 Dussehra SaleBration — Ending on 25th October!</p>
 </div></section>
 
 
@@ -117,16 +117,20 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 </div></section>
 
 <section id="order" class="page"><div class="k">Order Now</div><h2>Tell us what you want.</h2>
-<p class="sub">Choose a product, quantity and any customization. WhatsApp: <b>+91 83107 71159</b>. Shipping cost, if any, will be told on WhatsApp.</p>
-<form onsubmit="sendOrder(event)">
+<p class="sub">Add products or bundles separately to your cart, then send the complete order on WhatsApp. WhatsApp: <b>+91 83107 71159</b>. Shipping cost, if any, will be told on WhatsApp.</p>
 <div class="field"><label>Your name</label><input id="customerName" required></div>
-<div class="field"><label>Product</label><select id="product" required>
-<option value="">Select product</option><option>Customized Pen — ₹10</option><option>Mini Notebook — ₹10</option><option>Mini Binder — ₹15</option><option>Bookmark — ₹2</option><option>Paper Katana — ₹50</option><option>Ninja Stars — see sizes & prices</option><option>Paper Dagger — ₹20</option><option>Paper Kunai — ₹20</option><option>Paper Knife — ₹20</option>
-<option>Dakchi — ₹20</option><option>Weaponry Handmade Cards — Blast Set — ₹15 / pack</option></select></div>
-<div class="field"><label>Quantity</label><input id="qty" type="number" min="1" value="1" required></div>
+<div class="field"><label>Select product or bundle</label><select id="product"><option value="">Select product or bundle</option>
+<optgroup label="Dussehra Products">
+<option data-price="8">Mini Notebook — ₹8</option><option data-price="10">Customizable Pen / Pen Cap — ₹10</option><option data-price="10">Mini Binder — ₹10</option><option data-price="2">Bookmark — ₹2</option><option data-price="15">Paper Dagger — ₹15</option><option data-price="15">Paper Knife — ₹15</option><option data-price="15">Paper Kunai — ₹15</option><option data-price="35">Paper Katana — ₹35</option><option data-price="15">Weaponry Cards — ₹15</option><option data-price="15">Dakchi — ₹15</option></optgroup>
+<optgroup label="Ninja Stars">
+<option data-price="12">Normal Star — ₹12</option><option data-price="25">Double Star — ₹25</option><option data-price="25">Square Star — ₹25</option><option data-price="50">Transformer Star — ₹50</option><option data-price="30">Ninja Mat Star — ₹30</option></optgroup>
+<optgroup label="Bundles">
+<option data-price="150">The Dussehra Supreme Steal — ₹150</option><option data-price="100">The Ultimate Ninja Arsenal Steal — ₹100</option><option data-price="85">Transformer Master Pack — ₹85</option><option data-price="90">The Secret Agent Journal Set — ₹90</option><option data-price="50">Student Warrior Kit — ₹50</option></optgroup></select></div>
+<div class="field"><label>Quantity</label><input id="qty" type="number" min="1" value="1"></div>
 <div class="field"><label>Customization / details</label><textarea id="details" placeholder="Colour, name, printing, player choice, etc."></textarea></div>
-<button class="btn" type="submit">Send Order on WhatsApp</button>
-</form></section>
+<button class="btn" type="button" onclick="addToCart()">Add to Cart</button>
+<div id="cartBox" style="display:none;margin-top:24px" class="card"><h3>Your Cart</h3><div id="cartItems"></div><p style="font-size:20px;font-weight:900;margin-top:18px">Total: ₹<span id="cartTotal">0</span></p><button class="btn" type="button" onclick="sendOrder(event)">Send Cart on WhatsApp</button></div>
+</section>
 
 <section id="legal" class="page"><div class="k">Legal</div><h2>Simple & clear.</h2>
 <p class="sub">All prices are in INR. Products are handmade craft and stationery items. Customization depends on the product. Shipping cost, if any, will be communicated on WhatsApp before confirmation.</p>
@@ -134,14 +138,22 @@ footer{text-align:center;padding:30px;color:#9ba4b0;border-top:1px solid #292e36
 </main>
 <footer>© Creative Cardboard & Paper • Made with creativity</footer>
 <script>
-function sendOrder(e){
-e.preventDefault();
-const msg="Creative Cardboard Order\nName: "+document.getElementById("customerName").value+
-"\nProduct: "+document.getElementById("product").value+
-"\nQuantity: "+document.getElementById("qty").value+
-"\nDetails: "+(document.getElementById("details").value||"None");
-location.href="https://wa.me/918310771159?text="+encodeURIComponent(msg);
+const cart=[];
+function addToCart(){
+const select=document.getElementById("product"), option=select.options[select.selectedIndex];
+if(!option||!option.value){alert("Please select a product or bundle.");return;}
+const qty=Math.max(1,parseInt(document.getElementById("qty").value||"1",10));
+cart.push({name:option.textContent,price:Number(option.dataset.price||0),qty,details:document.getElementById("details").value||"None"});
+renderCart();select.value="";document.getElementById("qty").value=1;document.getElementById("details").value="";
 }
+function removeFromCart(i){cart.splice(i,1);renderCart();}
+function renderCart(){
+const box=document.getElementById("cartBox"),items=document.getElementById("cartItems"),total=document.getElementById("cartTotal");
+if(!cart.length){box.style.display="none";return;} box.style.display="block";let sum=0;
+items.innerHTML=cart.map((x,i)=>{sum+=x.price*x.qty;return '<div style="padding:12px 0;border-bottom:1px solid #343a44"><b>'+escapeHtml(x.name)+'</b> × '+x.qty+'<br><span class="sub">Details: '+escapeHtml(x.details)+'</span><br><button type="button" class="btn" style="margin-top:8px" onclick="removeFromCart('+i+')">Remove</button></div>';}).join("");total.textContent=sum;}
+function escapeHtml(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));}
+function sendOrder(e){if(e)e.preventDefault();if(!cart.length){alert("Please add at least one product or bundle to your cart.");return;}const name=document.getElementById("customerName").value;let msg="Creative Cardboard Order\nName: "+name+"\n\nCart:\n";cart.forEach((x,i)=>{msg+=(i+1)+". "+x.name+" × "+x.qty+"\nDetails: "+x.details+"\n";});msg+="\nTotal: ₹"+document.getElementById("cartTotal").textContent+"\nShipping: If any, to be told on WhatsApp.";location.href="https://wa.me/918310771159?text="+encodeURIComponent(msg);}
+
 </script>
 
 
